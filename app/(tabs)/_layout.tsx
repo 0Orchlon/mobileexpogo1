@@ -44,10 +44,16 @@ export default function TabLayout() {
       name='stopwatch'
       options={{
         title: 'StopWatch',
-        tabBarIcon:({ color }) => <IconSymbol size={28} name='paperplane.fill' color={color}
+        tabBarIcon:({ color }) => <IconSymbol size={28} name='clock.fill' color={color}
         />,
-      }}
-      ></Tabs.Screen>
+      }}/>
+      <Tabs.Screen
+      name='tictactoe'
+      options={{
+        title: 'TicTacToe',
+        tabBarIcon:({ color }) => <IconSymbol size={28} name="c.circle.fill" color={color}
+        />,
+      }}/>
     </Tabs>
   );
 }
