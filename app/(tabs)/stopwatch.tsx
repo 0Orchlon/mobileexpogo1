@@ -47,7 +47,7 @@ const Stopwatch: React.FC = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.timeText}>{formatTime(time)}</Text>
+      <Text style={styles.timeText} >{formatTime(time)}</Text>
       <View style={styles.buttonContainer}>
         <Button title={isRunning ? 'Stop' : 'Start'} onPress={handleStartStop} />
         <Button title="Reset" onPress={handleReset} />

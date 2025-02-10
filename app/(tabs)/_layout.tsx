@@ -54,6 +54,20 @@ export default function TabLayout() {
         tabBarIcon:({ color }) => <IconSymbol size={28} name="c.circle.fill" color={color}
         />,
       }}/>
+      <Tabs.Screen
+      name='speed'
+      options={{
+        title: 'Speed Track',
+        tabBarIcon:({ color }) => <IconSymbol size={28} name="c.circle.fill" color={color}
+        />,
+      }}/>
+      <Tabs.Screen
+      name='mbook'
+      options={{
+        title: 'MBooks',
+        tabBarIcon:({ color }) => <IconSymbol size={28} name="c.circle.fill" color={color}
+        />,
+      }}/>
     </Tabs>
   );
 }
