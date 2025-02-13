@@ -30,13 +30,10 @@ const FirstRoute = () => (
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={{
             alignItems: "center",
-            //justifyContent: "space-around",
             flexDirection: "row",
-            //height: 150,
-            //borderWidth: 1,
           }}
         >
-           {Array.from({ length: 50 }).map((_, index) => (
+           {Array.from({ length: 200 }).map((_, index) => (
           <Image
             style={styles.imgContainerTop}
             source={{
@@ -46,7 +43,7 @@ const FirstRoute = () => (
            ))}
         </ScrollView>
       </View>
-      <View style={{ flexDirection: "row" }}>
+      <View style={{ flexDirection: "row", marginTop:10 }}>
         <Text style={{ fontWeight: 800 }}>Энэ сарын онцлох</Text>
         <AntDesign name="star" size={18} color="gold" />
       </View>
@@ -58,15 +55,11 @@ const FirstRoute = () => (
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={{
           alignItems: "center",
-          //justifyContent: "space-around",
           flexDirection: "row",
-
-          //height: 150,
-          //borderWidth: 1,
         }}
       >
         <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-        {Array.from({ length: 5 }).map((_, index) => (
+        {Array.from({ length: 20 }).map((_, index) => (
             <View>
               <Image
                 style={styles.imgContainer}
@@ -74,24 +67,25 @@ const FirstRoute = () => (
                   uri: "https://reactnative.dev/img/tiny_logo.png",
                 }}
               />
-              {/* Icon overlay on the image */}
               <AntDesign
                 name="heart"
                 size={20}
                 color="red"
                 style={{ position: "absolute", top: 5, right: 15 }}
               />
+                <Text style={{marginLeft:10,fontSize:10}}>Tynan Syv</Text>
+                <Text style={{marginLeft:10}}>Game Design</Text>
             </View>
           ))}
         </ScrollView>
       </ScrollView>
-      <View style={{flexDirection:"row", width:"100%"}}>
+      <View style={{flexDirection:"row", marginTop:10, width:"100%"}}>
         <Text style={{alignItems:"flex-start" }} >Зөвхөн Mbook-ээс</Text>
         <Feather name="headphones" size={14} color="black" style={{ alignItems:"flex-start" }}/>
-        <Text style={{ alignSelf:"flex-end", right:0, position: "absolute"}} >Бүгд</Text>
+        <Text style={{ alignSelf:"flex-end", right:10, position: "absolute"}} >Бүгд</Text> 
       </View>
       <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-      {Array.from({ length: 5 }).map((_, index) => (
+      {Array.from({ length: 20 }).map((_, index) => (
             <View>
               <Image
                 style={styles.imgContainer}
@@ -99,23 +93,24 @@ const FirstRoute = () => (
                   uri: "https://reactnative.dev/img/tiny_logo.png",
                 }}
               />
-              {/* Icon overlay on the image */}
               <AntDesign
                 name="heart"
                 size={20}
                 color="red"
                 style={{ position: "absolute", top: 5, right: 15 }}
               />
+                <Text style={{marginLeft:10,fontSize:10}}>Tynan Syv</Text>
+                <Text style={{marginLeft:10}}>Game Design</Text>
             </View>
           ))}
       </ScrollView>
-        <Text style={{alignItems:"flex-start" }}>Анх удаа ном сонсох гэж байна уу?</Text>
+        <Text style={{alignItems:"flex-start", marginTop:10 }}>Анх удаа ном сонсох гэж байна уу?</Text>
       <View style={{flexDirection:"row", width:"100%"}}> 
         <Text >Унших завгүй бол СОНСООД үз</Text>
-        <Text style={{ alignSelf:"flex-end", right:0, position: "absolute"}} >Бүгд</Text>
+        <Text style={{ alignSelf:"flex-end", right:10, position: "absolute"}} >Бүгд</Text>
       </View>
       <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-      {Array.from({ length: 5 }).map((_, index) => (
+      {Array.from({ length: 20 }).map((_, index) => (
             <View>
               <Image
                 style={styles.imgContainer}
@@ -123,24 +118,23 @@ const FirstRoute = () => (
                   uri: "https://reactnative.dev/img/tiny_logo.png",
                 }}
               />
-              {/* Icon overlay on the image */}
-              {/* <Feather name="headphones" size={14} color="black" style={{ alignItems:"flex-start" }}/> */}
-
               <Feather name="headphones"
                 size={20}
                 color="red"
                 style={{ position: "absolute", top: 5, right: 15 }}
               />
+                <Text style={{marginLeft:10,fontSize:10}}>Tynan Syv</Text>
+                <Text style={{marginLeft:10}}>Game Design</Text>
             </View>
           ))}
       </ScrollView>
-      <View style={{flexDirection:"row", width:"100%"}}> 
+      <View style={{flexDirection:"row", marginTop:10,width:"100%"}}> 
         <Text style={{alignItems:"flex-start" }}>Багц номууд</Text>
         <Ionicons name="book" size={14} color="red" style={{ alignItems:"flex-start" }}/>
-        <Text style={{ alignSelf:"flex-end", right:0, position: "absolute"}} >Бүгд</Text>
+        <Text style={{ alignSelf:"flex-end", right:10, position: "absolute"}} >Бүгд</Text>
       </View>
       <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-      {Array.from({ length: 5 }).map((_, index) => (
+      {Array.from({ length: 20 }).map((_, index) => (
             <View>
               <Image
                 style={styles.imgContainer}
@@ -148,21 +142,21 @@ const FirstRoute = () => (
                   uri: "https://reactnative.dev/img/tiny_logo.png",
                 }}
               />
-              {/* Icon overlay on the image */}
-              {/* <Feather name="headphones" size={14} color="black" style={{ alignItems:"flex-start" }}/> */}
-
               <Entypo name="book"
                 size={20}
                 color="red"
                 style={{ position: "absolute", top: 5, right: 15 }}
               />
+                <Text style={{marginLeft:10,fontSize:10}}>Tynan Syv</Text>
+                <Text style={{marginLeft:10}}>Game Design</Text>
             </View>
           ))}
       </ScrollView>
-      <View>
+      <View style={{marginTop:10}} >
       <ImageBackground style={{height:200, maxWidth:"auto"}}
       source={{ uri: 
-        "https://images.unsplash.com/photo-1633526544365-a98d534c9201?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"         }}
+        "https://wallpapercave.com/wp/wp5485906.jpg"
+         }}
     
     >
         <View style={{flexDirection:"row", width:"100%"}}>
@@ -174,7 +168,36 @@ const FirstRoute = () => (
           <Feather name="headphones" size={10} color="black" style={{alignItems:"flex-start"}}/>
         </View>
         <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-        {Array.from({ length: 5 }).map((_, index) => (
+          <View>
+            <Image style={styles.imgContainer} />
+            </View>
+        {Array.from({ length: 20 }).map((_, index) => (
+          <View>
+              <Image
+                style={styles.imgContainer}
+                source={{
+                  uri: "https://reactnative.dev/img/tiny_logo.png",
+                }}
+              />
+              <Entypo name="book"
+                size={20}
+                color="red"
+                style={{ position: "absolute", top: 5, right: 15 }}
+                />
+                  <Text style={{marginLeft:10,fontSize:10}}>Tynan Syv</Text>
+                  <Text style={{marginLeft:10}}>Game Design</Text>
+            </View>
+          ))}
+        </ScrollView>
+      </ImageBackground>
+      </View>
+      <View style={{flexDirection:"row", width:"100%",marginTop:10}}> 
+        <Text style={{alignItems:"flex-start" }}>Багц номууд</Text>
+        <Ionicons name="book" size={14} color="red" style={{ alignItems:"flex-start" }}/>
+        <Text style={{ alignSelf:"flex-end", right:10, position: "absolute"}} >Бүгд</Text>
+      </View>
+      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+      {Array.from({ length: 20 }).map((_, index) => (
             <View>
               <Image
                 style={styles.imgContainer}
@@ -187,19 +210,150 @@ const FirstRoute = () => (
                 color="red"
                 style={{ position: "absolute", top: 5, right: 15 }}
               />
+                <Text style={{marginLeft:10,fontSize:10}}>Tynan Syv</Text>
+                <Text style={{marginLeft:10}}>Game Design</Text>
+            </View>
+          ))}
+      </ScrollView>
+      <View style={{marginTop:10}} >
+      <ImageBackground style={{height:200, maxWidth:"auto"}}
+      source={{ uri: 
+        "https://w0.peakpx.com/wallpaper/942/857/HD-wallpaper-meme-chan-cute-meme-anime-denpa-chan.jpg"
+        }}
+    >
+        <View style={{flexDirection:"row", width:"100%"}}>
+        <Text>Burii-н санал болгох номууд</Text>
+        <Text style={{alignSelf:"flex-end", position: "absolute", right:10,}} >Бүгд</Text>
+
+        </View>
+        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+          <View>
+            <Image style={styles.imgContainer} />
+            </View>
+        {Array.from({ length: 20 }).map((_, index) => (
+          <View>
+              <Image
+                style={styles.imgContainer}
+                source={{
+                  uri: "https://reactnative.dev/img/tiny_logo.png",
+                }}
+              />
+              <Entypo name="book"
+                size={20}
+                color="red"
+                style={{ position: "absolute", top: 5, right: 15 }}
+                />
+                  <Text style={{marginLeft:10,fontSize:10}}>Tynan Syv</Text>
+                  <Text style={{marginLeft:10}}>Game Design</Text>
             </View>
           ))}
         </ScrollView>
       </ImageBackground>
       </View>
-
-<View style={{flexDirection:"row", width:"100%"}}>
+      <View style={{flexDirection:"row", width:"100%", marginTop:10}}> 
+        <Text style={{alignItems:"flex-start" }}>Багц номууд</Text>
+        <Ionicons name="book" size={14} color="red" style={{ alignItems:"flex-start" }}/>
+        <Text style={{ alignSelf:"flex-end", right:10, position: "absolute"}} >Бүгд</Text>
+      </View>
+      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+      {Array.from({ length: 20 }).map((_, index) => (
+            <View>
+              <Image
+                style={styles.imgContainer}
+                source={{
+                  uri: "https://reactnative.dev/img/tiny_logo.png",
+                }}
+              />
+              <Entypo name="book"
+                size={20}
+                color="red"
+                style={{ position: "absolute", top: 5, right: 15 }}
+              />
+                <Text style={{marginLeft:10,fontSize:10}}>Tynan Syv</Text>
+                <Text style={{marginLeft:10}}>Game Design</Text>
+            </View>
+          ))}
+      </ScrollView>
+      <View style={{marginTop:10, flexDirection:"row", width:"100%"}}> 
+        <Text style={{alignItems:"flex-start" }}>Багц номууд</Text>
+        <Ionicons name="book" size={14} color="red" style={{ alignItems:"flex-start" }}/>
+        <Text style={{ alignSelf:"flex-end", right:10, position: "absolute"}} >Бүгд</Text>
+      </View>
+      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+      {Array.from({ length: 20 }).map((_, index) => (
+            <View>
+              <Image
+                style={styles.imgContainer}
+                source={{
+                  uri: "https://reactnative.dev/img/tiny_logo.png",
+                }}
+              />
+              <Entypo name="book"
+                size={20}
+                color="red"
+                style={{ position: "absolute", top: 5, right: 15 }}
+              />
+                <Text style={{marginLeft:10,fontSize:10}}>Tynan Syv</Text>
+                <Text style={{marginLeft:10}}>Game Design</Text>
+            </View>
+          ))}
+      </ScrollView>
+      <View style={{flexDirection:"row", marginTop:10, width:"100%"}}> 
+        <Text style={{alignItems:"flex-start" }}>Багц номууд</Text>
+        <Ionicons name="book" size={14} color="red" style={{ alignItems:"flex-start" }}/>
+        <Text style={{ alignSelf:"flex-end", right:10, position: "absolute"}} >Бүгд</Text>
+      </View>
+      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+      {Array.from({ length: 20 }).map((_, index) => (
+            <View>
+              <Image
+                style={styles.imgContainer}
+                source={{
+                  uri: "https://reactnative.dev/img/tiny_logo.png",
+                }}
+              />
+              <Entypo name="book"
+                size={20}
+                color="red"
+                style={{ position: "absolute", top: 5, right: 15 }}
+              />
+                <Text style={{marginLeft:10,fontSize:10}}>Tynan Syv</Text>
+                <Text style={{marginLeft:10}}>Game Design</Text>
+            </View>
+          ))}
+      </ScrollView>
+      <View style={{flexDirection:"row", marginTop:10, width:"100%"}}> 
+        <Text style={{alignItems:"flex-start" }}>Багц номууд</Text>
+        <Ionicons name="book" size={14} color="red" style={{ alignItems:"flex-start" }}/>
+        <Text style={{ alignSelf:"flex-end", right:10, position: "absolute"}} >Бүгд</Text>
+      </View>
+      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+      {Array.from({ length: 20 }).map((_, index) => (
+            <View>
+              <Image
+                style={styles.imgContainer}
+                source={{
+                  uri: "https://reactnative.dev/img/tiny_logo.png",
+                }}
+              />
+              <Entypo name="book"
+                size={20}
+                color="red"
+                style={{ position: "absolute", top: 5, right: 15 }}
+              />
+                            <Text style={{marginLeft:10,fontSize:10}}>Tynan Syv</Text>
+                            <Text style={{marginLeft:10}}>Game Design</Text>
+            </View>
+          ))}
+      </ScrollView>
+      
+<View style={{flexDirection:"row", width:"100%", marginTop:10}}>
   <Text>Зохиолчид</Text>
   <Entypo name="pencil" size={15} color="black" />
 </View>
 
 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-      {Array.from({ length: 5 }).map((_, index) => (
+      {Array.from({ length: 20 }).map((_, index) => (
             <View>
               <Image
                 style={styles.imgProfile}
@@ -207,23 +361,72 @@ const FirstRoute = () => (
                   uri: "https://reactnative.dev/img/tiny_logo.png",
                 }}
               />
-              {/* Icon overlay on the image */}
-              {/* <Feather name="headphones" size={14} color="black" style={{ alignItems:"flex-start" }}/> */}
-
               <Entypo name="book"
                 size={20}
                 color="red"
                 style={{ position: "absolute", top: 5, right: 15 }}
               />
+                            <Text style={{alignItems:"center",marginLeft:50}}>
+                Anon
+              </Text>
+
             </View>
           ))}
       </ScrollView>
 
+<View style={{flexDirection:"row", width:"100%", marginTop:10}}>
+  <Text>Зохиолчид</Text>
+  <Entypo name="pencil" size={15} color="black" />
+</View>
 
-      <Text>abc</Text>
-      <Text>abc</Text>
-      <Text>abc</Text>
-      <Text>abc</Text>
+<ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+      {Array.from({ length: 20 }).map((_, index) => (
+            <View>
+              <Image
+                style={styles.imgProfile}
+                source={{
+                  uri: "https://media.tenor.com/zufgmL_YFNoAAAAi/pepe-arknights.gif",
+                }}
+              />
+              <Entypo name="book"
+                size={20}
+                color="red"
+                style={{ position: "absolute", top: 5, right: 15 }}
+              />
+              <Text style={{alignItems:"center",marginLeft:50}}>
+                Anon
+              </Text>
+            </View>
+          ))}
+      </ScrollView>
+      
+           
+      <View style={{flexDirection:"row", width:"100%", marginTop:10}}> 
+        <Text style={{alignItems:"flex-start", fontWeight:"black" }}>Mbook номын клуб-с санал болгох нь</Text>
+        <Text style={{ alignSelf:"flex-end", right:10, position: "absolute",color:"Yellow"}} >Бүгд</Text>
+      </View>
+           <View>
+            <Text style={{alignItems:"flex-start", fontSize:12}}>Бидний сонссон номууд...</Text>
+           </View>
+      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+      {Array.from({ length: 20 }).map((_, index) => (
+            <View>
+              <Image
+                style={styles.imgContainer}
+                source={{
+                  uri: "https://reactnative.dev/img/tiny_logo.png",
+                }}
+              />
+              <Entypo name="book"
+                size={20}
+                color="red"
+                style={{ position: "absolute", top: 5, right: 15 }}
+              />
+  <Text style={{marginLeft:10,fontSize:10}}>Tynan Syv</Text>
+  <Text style={{marginLeft:10}}>Game Design</Text>
+              </View>
+          ))}
+      </ScrollView>
       <Text>abc</Text>
     </ScrollView>
   </View>
